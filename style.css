@@ -1,0 +1,480 @@
+*{
+    margin:0;
+    font-family: 'Futura', sans-serif;
+    /* font-style: italic;
+    letter-spacing: 10px; */
+}
+
+.wrapper{
+    width: 100%;
+    
+    max-width: 1300px;
+    /* background: red; */
+    margin: 0 auto;
+    display: block;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-image: url('pics.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.7s ease;
+    /* justify-content: center */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: 0.7s ease;
+    background-color:rgba(0, 0, 0, 0.91);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  .item{
+    margin-left: 2px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+  }
+  /* -------------------------- */
+
+  .item1{
+    flex-grow: 1.4;
+  }
+
+
+  .item2{
+      max-width: 750px;
+    flex-grow: 1;
+    text-align: center;
+    
+  }
+
+
+  .item3{
+    flex-grow: 1;
+  }
+
+/* -------------------------- */
+
+  .itemA{
+    background: none;
+    flex-basis: 50%;
+    margin-top: 2px;
+    opacity: 1;
+}
+
+
+.itemC{
+    flex-basis: 50%;
+    margin-top: 2px;
+    
+}
+
+/* -------------------------- */
+
+
+.item1a{
+    background-image: url('stars3.png');
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item1b{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.scroll-div{
+    color: white;
+    font-size: 8px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    /* background: red; */
+    margin-left: -40px;
+    margin-top: 225px;
+    height: 100px;
+    
+}
+
+.scroll{
+    
+    margin: 40px auto;
+    animation: bounce 2s ease-in-out reverse infinite
+}
+
+.ion-ios-arrow-thin-down{
+    font-size: 30px;
+    color: #CCB954;
+    margin-left: 10px;
+    margin-right: 0px;
+    /* opacity: 1; */
+   
+    
+}
+
+.moon{
+    margin:85px auto;
+        height: 50px;
+        width: 50px;
+        border-radius:50%;
+        background: #E1F5FE;
+        transform: rotate(-20deg);
+        box-shadow: 8px 12px 100px rgba(245, 245, 245, 0.48);
+        background: linear-gradient(#FBFAE3, rgb(228, 224, 224));
+        animation: su 50s ease-in infinite
+}
+
+
+/* -------------------------- */
+
+
+.item3a{
+    /* background: #CB9A9A; */
+    flex-basis: 25%;
+    opacity: 1;
+    display: flex;
+    background-image: url('stars3.png');
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.item3b{
+    background: none;
+    flex-basis: 50%;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between */
+}
+
+
+.item3c{
+    background: none;
+    flex-basis: 25%;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+/* -------------------------- */
+
+.connector{
+    color: #DFC33E;
+    font-size: 35px;
+    position: absolute;
+    margin-left: 29.5%;
+    margin-top: -2.4%;
+    font-style: italic;
+}
+
+.content1{
+    letter-spacing: 8px;
+    color: #E9E9E9;
+    font-style: italic;
+    font-size: 19px;
+    opacity: 0.8;
+    padding: 15px 0 20px 0;
+}
+
+.mini{
+    color: #DFC33E;
+    font-size: 24px;
+    opacity: 0.1;
+}
+
+.content2{
+    letter-spacing: 5px;
+    color: #685C25;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 19px;
+
+}
+
+.mini1{
+    color: #E9E9E9;
+    opacity: 0.8;
+}
+
+.mini2{
+    color: #E9E9E9;
+    opacity: 0.8;
+}
+
+
+/* -------------------------- */
+
+.slid-nav1{
+    /* background: #423E3E; */
+    /* flex-basis: 50px; */
+    flex-grow: 9;
+    /* opacity: 0; */
+}
+
+.slid-nav2{
+    background: #1C1B1B;
+    /* flex-basis: 50px; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------- */
+
+.spinner{
+    background: none;
+    margin-top: 80px;
+    margin-left: 80px;
+    height: 60px;
+    transform: rotate(115deg);
+    animation: roll 5s ease-in infinite alternate-reverse,
+               fadeIn 2s ease-in-out;
+}
+
+.circle{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #DFCF6F;
+    opacity: 0.8;
+    animation: expand 3s 5s  ease-in infinite alternate-reverse;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #1F1D1D;
+    border-bottom: 33px solid transparent;
+}
+
+.triangle:before {
+    content: '';
+	width: 0;
+	height: 0;
+	border-top: 21px solid transparent;
+	border-left: 41px solid black;
+    border-bottom: 26px solid transparent;
+    position: absolute;
+    margin-left: -47px;
+    margin-top: -20px;
+    
+}
+
+/* -------------------------- */
+		
+
+@keyframes roll {
+    0%{transform: rotate(360deg)}
+    50%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+    
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+@keyframes expand{
+    0%{transform: rotate(360deg) translateY(-8px); opacity: 0.8}
+   100%{transform: rotate(0deg) translateY(-6px); opacity: 0.8}
+}
+
+
+@keyframes bounce{
+    0%{transform: translateY(8px); opacity: 0}
+    50%{transform: translateY(0px); opacity: 1}
+    100%{transform: translateY(8px); opacity: 0}
+}
+
+
+@keyframes sun {
+    0%{transform: rotate(360deg)}
+    50%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+}
+
+
+.burger-nav{
+    /* background: red; */
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+.active-slide{
+    /* background: grey; */
+    margin: 4px auto;
+}
+
+#one{
+    font-family: 'Hiragino Kaku Gothic StdN';
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    opacity: 0.9
+}
+
+#divider{
+    font-family: 'Hiragino Kaku Gothic StdN';
+    color: black;
+    font-size: 12px;
+    opacity: 0.7;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.rest-slide{
+    /* background: blue; */
+    flex-grow: 0.5;
+    margin: 2px auto;
+}
+
+#two{
+    font-family: 'Hiragino Kaku Gothic StdN';
+    color: #121212;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding-top: 4px;
+    
+}
+
+p#two:hover{
+    color: white;
+    opacity: 0.5;
+    transform: scale3d(1.2,1.2,1.2);
+    
+}
+
+.media{
+    /* background: greenyellow; */
+    /* flex-grow: 0.1; */
+    margin: 0px auto;
+    margin-bottom: 25px
+   
+}
+
+.burger{
+    margin: 0px auto;
+    width: 25px;
+    cursor: pointer;
+    transition: 0.5s
+    
+}
+
+.burger:hover{
+    transform: scale3d(1.1, 1.1, 1.1)
+    
+}
+
+.line{
+    position: relative;
+    /* height: 1px; */
+    /* background: rgba(255, 255, 255,0.5); */
+    width: 25px;
+    display: block;
+    margin-top: 6px;
+}
+
+.first{
+    width: 18px;
+    height: 2px;
+    background: black
+}
+
+.second{
+    width: 27px;
+    height: 1px;
+    background: #DFC33E;
+    opacity: 0.95
+}
+
+.third{
+    width: 18px;
+    height: 1px;
+    background: white;
+    opacity: 0.95;
+}
+
+div.icon{
+   text-align: center;
+}
+
+div#three:hover {
+    color: #DFC33E;
+    opacity: 0.9;
+    transform: scale3d(1.2,1.2,1.2);
+}
+
+.ion-social-facebook{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ion-social-twitter{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ion-social-github{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.test{
+    color:red
+}
