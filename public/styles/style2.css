@@ -8,7 +8,7 @@
     max-width: 1300px;
     background: black;
     margin: 0 auto;
-    display: block;
+    display: flex;
     
 }
 
@@ -22,10 +22,11 @@
 .work-container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 0 auto;
     background-image: url('../images/profile3.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -50,7 +51,7 @@
     background-color:rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
 .work-header{
@@ -193,7 +194,7 @@
 .work-body{
     display: flex;
     flex-direction:column;
-    flex-grow: 9;
+    flex-grow: 1;
     background: transparent;
     color: white;
    
@@ -225,6 +226,32 @@
 @keyframes movingLine{
     0%{flex-basis: 0px; opacity: 0}
    100%{flex-basis: 760px; opacity:0.8}
+}
+
+
+.Home-back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    flex-basis: 40px;
+    height: 40px;
+    letter-spacing: 1px;
+    color: #fff;
+    justify-content: space-around;
+    cursor: pointer;
+    opacity: 0;
+    animation: home-back 0.5s 2.5s  ease-in forwards;
+}
+
+@keyframes home-back{
+    0%{opacity: 0}
+   100%{opacity:1}
+}
+
+.ion-ios-close-empty{
+    color: #808080;
+    font-size: 25px;
 }
 
 
@@ -262,6 +289,8 @@
 }
 
 
+
+
 .showcase{
     flex-grow: 1;
     display: flex;
@@ -277,6 +306,7 @@
     justify-content: center;
     /* margin: 5px; */
     margin-bottom: 30px;
+    margin-right: 10px;
     flex-basis: 500px;
     height: 450px;
 }
@@ -309,16 +339,16 @@
     background-repeat: no-repeat;
     background-position: center;
     padding:0;
-    border: 1px solid transparent ;
-    animation: borderLine 2s  ease-in forwards;
+    border: 1px solid rgba(128,128,128,0.6) ;
+    /* animation: borderLine 2s  ease-in forwards; */
 }
 
-@keyframes borderLine{
+/* @keyframes borderLine{
     0%{border-top-color: rgba(128,128,128,0.6)}
     25%{border-top-color: rgba(128,128,128,0.6);border-right-color: rgba(128,128,128,0.6)}
     50%{border-top-color: rgba(128,128,128,0.6);border-right-color: rgba(128,128,128,0.6);border-bottom-color: rgba(128,128,128,0.6)}
     100%{border-top-color: rgba(128,128,128,0.6);border-right-color: rgba(128,128,128,0.6);border-bottom-color: rgba(128,128,128,0.6);border-left-color: rgba(128,128,128,0.6)}
-}
+} */
 
 .showcase2{
     background: black;

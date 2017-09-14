@@ -1,3 +1,32 @@
+$(document).load($(window).on("resize", checkPosition));
+
+function checkPosition()
+{
+    if($(window).width() < 1024)
+    {
+        $("#now0").fadeIn();
+        $("#now1").hide();
+        $("#now2").hide();
+        
+        $("#now3").hide();
+        
+        $("#now4").hide();
+        
+        $("#now5").hide();
+        
+        $("#now6").hide();
+        
+        $("#show-case1").hide();
+
+       
+
+    } else {
+        $("#now1").fadeIn('slow');
+        $("#now0").hide();
+    }
+}
+
+
 $(document).ready(function(){
     $('.burger').on('click', function(){
         $('.slid-nav1 div').toggleClass('starting');
@@ -19,27 +48,9 @@ $(document).on("click", function(e){
 });
 
 
-// $(window).scroll(function(){
+$("#now0").hide();
 
-//     if ($(window).scrollTop() > 0) {
-//         $("#now").fadeIn("slow");
-//         $("#now") .css({ "top": "0px" }) 
-        
-//     }
-//     else {
-//         $("#now").fadeOut("slow");
-//     }
-
-    // $('#now').addClass('wrapper2');
-    // $('.item2 p.content1').addClass('tobi')
-
-//     var scrollHeight = $(this).scrollTop();
-
-//     console.log(scrollHeight);
-
-    
-// })
-
+// $("#now1").hide();
 
 $("#now2").hide();
 
@@ -59,6 +70,7 @@ $(window).on('mousewheel DOMMouseScroll', function(event){
     if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) {
         $("#now2").fadeIn("slow");
         $("#show-case1").show(1500);
+        
         // $("#now") .css({ "top": "0px" }) 
     }
     else {
@@ -92,6 +104,22 @@ $(document).ready(function(){
 
 })
 
+$(document).ready(function(){
+    $('.scroll-div').on('click', function(){
+        $("#now2").fadeIn("slow");
+        $("#show-case1").show(1000);
+    });
+
+})
+
+$(document).ready(function(){
+    $('#works').on('click', function(){
+        $("#now2").fadeIn("slow");
+        $("#show-case1").show(1000);
+    });
+
+})
+
 
 // $(document).ready(function(){
 //     $( "#now" ).keyup(function(event){
@@ -103,6 +131,15 @@ $(document).ready(function(){
     // });
 
 // })
+
+//CONTROL BACK TO HOME
+
+$(document).ready(function(){
+    $('.Home-back').on('click', function(){
+        $("#now2,#now3,#now4,#now5,#now6").fadeOut('slow')
+    });
+
+})
 
 
 // PAGE 2 TO PAGE 3
@@ -194,11 +231,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#next6').on('click', function(){
-        $("#now7").fadeIn( 600);
+        $('#now2,#now3,#now4,#now5,#now6').fadeOut( 600);
     });
 
 })
 
+
+
+ 
 
 
 

@@ -15,9 +15,11 @@
     <link href="styles/style4.css" rel="stylesheet">
     <link href="styles/style5.css" rel="stylesheet">
     <link href="styles/style6.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Chonburi|Gravitas+One|Limelight|Rozha+One|Yeseva+One" rel="stylesheet">
+    <link href="styles/small-screen.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,7 +32,7 @@
 
 <body>
 
-    <div class="wrapper">
+    <div id="now1" class="wrapper">
 
         <!-- <img class"img-responsive" width="100%" src="pics.jpg"> -->
 
@@ -60,8 +62,9 @@
                     <!-- <p class="connector">X</p> -->
                     <p class="content1">TEMIDAYO OLUWANIYI <span class="mini">X</span> CREATIVE DIRECTOR</p>
 
-                    <p class="content2">…a young boy who quit fashion for <span class="mini1">Design</span> and <span class="mini2">Codes</span><br>I
-                        believe creativity is emotionally unstable to<br> be stagnant</p>
+                    <p class="content2">I’m a <span style="color: #808080">UI/UX Designer</span>, Web & Mobile <span style="color:#808080">Frontend Developer</span> based in <br>
+                            Lagos, Nigeria. Feel free to <span id="works" style="color:rgba(255,211,0,0.75); cursor: pointer;">explore my works</span> or contact me <br>
+                            using the google icon </p>
                 </div>
                 <!-- close item2 -->
 
@@ -83,7 +86,7 @@
                             </div>
                         </div>
 
-                        <div class="slid-nav2">
+                        <div id="slide-nav" class="slid-nav2">
 
                             <div class="burger-nav">
                                 <div class="burger">
@@ -102,11 +105,12 @@
                                 <p id="two">02</p>
                                 <p id="two">03</p>
                                 <p id="two">04</p>
+                                <p id="two">05</p>
                             </div>
 
                             <div class="media">
                                 <div class="icon">
-                                        <a style="color: black" href="https://www.linkedin.com/in/oluwaniyi-temidayo-817534128/" target="_blank"><div id="three" class="ion-social-facebook"></div></a>
+                                        <a style="color: black" href="mailto:temidayo.oluwaniyi@gmail.com?Subject=Lets%20Collaborate" target="_top"><div id="three" class="ion-social-google"></div></a>
                                     <a style="color: black" href="https://twitter.com/temiidayor" target="_blank"><div id="three" class="ion-social-twitter"></div></a>
                                     <a style="color: black" href="https://github.com/temiid" target="_blank"><div id="three" class="ion-social-github"></div></a>
                                 </div>
@@ -198,6 +202,10 @@
                     <div class="back-controller">
                         <div id="back2" class="button"> <i style="font-size: 15px" class="ion-ios-arrow-thin-left"></i> <span class="zoom-back">back</span></div>
                         <div class="moving-line"></div><!-- moving-line is for page2 -->
+
+                        <div id="back-home" class="Home-back">
+                            <i class="ion-ios-close-empty"></i>
+                        </div>
                     </div>
 
                     <div class="showcase">
@@ -291,6 +299,10 @@
                                         <div class="back-controller">
                                             <div id="back3" class="button"> <i style="font-size: 15px" class="ion-ios-arrow-thin-left"></i> <span class="zoom-back">back</span></div>
                                             <div class="moving-line2"></div><!-- moving-line2 is for page3 -->
+
+                                            <div id="back-home" class="Home-back">
+                                                 <i class="ion-ios-close-empty"></i>
+                                             </div>
                                         </div>
                     
                                         <div class="showcase">
@@ -384,6 +396,10 @@
                                         <div class="back-controller">
                                             <div id="back4" class="button"> <i style="font-size: 15px" class="ion-ios-arrow-thin-left"></i> <span class="zoom-back">back</span></div>
                                             <div class="moving-line3"></div><!-- moving-line3 is for page4 -->
+
+                                            <div id="back-home" class="Home-back">
+                                                <i class="ion-ios-close-empty"></i>
+                                            </div>
                                         </div>
                     
                                         <div class="showcase">
@@ -477,6 +493,10 @@
                                                         <div class="back-controller">
                                                             <div id="back5" class="button"> <i style="font-size: 15px" class="ion-ios-arrow-thin-left"></i> <span class="zoom-back">back</span></div>
                                                             <div class="moving-line4"></div><!-- moving-line4 is for page5 -->
+
+                                                            <div id="back-home" class="Home-back">
+                                                                <i class="ion-ios-close-empty"></i>
+                                                            </div>
                                                         </div>
                                     
                                                         <div class="showcase">
@@ -570,6 +590,10 @@
                                                     <div class="back-controller">
                                                         <div id="back6" class="button"> <i style="font-size: 15px" class="ion-ios-arrow-thin-left"></i> <span class="zoom-back">back</span></div>
                                                         <div class="moving-line5"></div><!-- moving-line5 is for page6 -->
+
+                                                        <div id="back-home" class="Home-back">
+                                                            <i class="ion-ios-close-empty"></i>
+                                                        </div>
                                                     </div>
                                 
                                                     <div class="showcase">
@@ -592,7 +616,7 @@
                                 
                                                     <div class="next-controller">
                                                             <div style="margin-right: 10px" class="moving-line5"></div><!-- moving-line5 is for page6 -->
-                                                        <div id="next6" class="button2"> <span class="zoom-front">next project</span> <i style="font-size: 15px" class="ion-ios-arrow-thin-right"></i></div>
+                                                        <div id="next6" class="button2"> <span class="zoom-front"> return home</span> <i style="font-size: 15px" class="ion-ios-arrow-thin-right"></i></div>
                                                     </div>
                                 
                                                 </div>
@@ -606,32 +630,41 @@
             
             
                  </div>
-                 <!-- wrapper5 -->
+                 <!-- wrapper6-->
+
+    
+    <div id="now0" class="wrapper0">
+        
+            <div class="work-container">
+                    
+                <div class="new-overlay">
+                    <div class="screen-alert">
+                        <p class="alert-1">BROSWER WINDOW <span style="color:#FFD300">TOO SMALL!!</span></p>
+                        <p class="alert-2">This site is best optimized on large screens, <br> kindly make your browser <span style="color:rgba(255,211,0,0.8); ">wider!</span></p>
+
+                        <div class="screen-gesture">
+                            <p class="left-arrow"><i class="ion-ios-arrow-thin-left"></i></p>
+                            <p class="monitor"><i class="ion-ios-monitor-outline"></i></p>
+                            <p class="right-arrow"><i class="ion-ios-arrow-thin-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        
+    </div>
+    <!-- wrapper0 -->
             
-            
-
-                
-                
-
-
-
-
-
-
-
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-    <script src="jquery-3.2.1.min.js">
-
-    </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="test.js">
-
-    </script>
+    <script src="js/test.js"></script>
+    <script src="js/app.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 *{
     margin:0;
-    font-family: 'Futura', serif;
+    font-family: 'Futura', Arial, sans-serif;
 }
 
 body{
@@ -26,6 +26,7 @@ body{
     margin: 0 auto;
     background-image: url('../images/pics.jpg');
     background-size: cover;
+    background-position: center;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -103,7 +104,7 @@ body{
 
 
 .item1a{
-    background-image: url('stars3.png');
+    background-image: url('../images/stars3.png');
     background-size: cover;
     top: 0;
     bottom: 0;
@@ -138,13 +139,14 @@ body{
     margin-left: -40px;
     margin-top: 220px;
     height: 60px;
+    cursor: pointer;
     
 }
 
 .scroll{
     
     margin: 20px auto;
-    animation: bounce 2s ease-in-out reverse infinite
+    animation: bounce 2s ease-in-out reverse infinite;
 }
 
 .ion-ios-arrow-thin-down{
@@ -166,8 +168,40 @@ body{
         transform: rotate(-20deg);
         box-shadow: 8px 12px 100px rgba(245, 245, 245, 0.48);
         background: linear-gradient(#FBFAE3, rgb(228, 224, 224));
-        animation: su 50s ease-in infinite
+        -webkit-animation: su 50s ease-in infinite,
+                          moon-entrance 1.5s ease-in forwards;
+        -moz-animation: su 50s ease-in infinite,
+                          moon-entrance 1.5s ease-in forwards;
+        -ms-animation: su 50s ease-in infinite,
+                          moon-entrance 1.5s ease-in forwards;
+        -o-animation: su 50s ease-in infinite,
+                          moon-entrance 1.5s ease-in forwards;
+        animation: su 50s ease-in infinite,
+                   moon-entrance 1.5s ease-in forwards;
+        
 }
+
+@keyframes moon-entrance {
+    0%{ transform: translateX(-15px); opacity:0}
+    100% {transform: translateX(0px); opacity:1}
+}
+
+@-webkit-keyframes moon-entrance {
+    0%{ transform: translateX(-15px); opacity:0}
+    100% {transform: translateX(0px); opacity:1}
+}
+
+@-moz-keyframes moon-entrance {
+    0%{ transform: translateX(-15px); opacity:0}
+    100% {transform: translateX(0px); opacity:1}
+}
+
+@-ms-keyframes moon-entrance {
+    0%{ transform: translateX(-15px); opacity:0}
+    100% {transform: translateX(0px); opacity:1}
+}
+
+
 
 
 /* -------------------------- */
@@ -178,7 +212,7 @@ body{
     flex-basis: 25%;
     opacity: 1;
     display: flex;
-    background-image: url('stars3.png');
+    background-image: url('../images/stars3.png');
     background-size: cover;
     top: 0;
     bottom: 0;
@@ -211,26 +245,34 @@ body{
 
 /* -------------------------- */
 
-/* .connector{
-    color: #FFD300;
-    opacity: 0.8;
-    font-size: 35px;
-    position: absolute;
-    margin-left: 29.5%;
-    margin-top: -2.4%;
-    font-style: italic;
-    position: fixed
-} */
-
 .content1{
     letter-spacing: 8px;
     color: rgba(255,255,255,1);
-    /* font-style: italic; */
-    /* font-weight: bold; */
     font-size: 19px;
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 15px 0 20px 0;
+    /* animation: content1-entrance 1.5s 1s ease-in forwards; */
 }
+
+/* @keyframes content1-entrance{
+    0%{ opacity: 0}
+    100%{transform: scale3d(1.03,1.03,1.03); opacity: 0.9}
+}
+
+@-webkit-keyframes content1-entrance{
+    0%{ opacity: 0}
+    100%{transform: scale3d(1.03,1.03,1.03); opacity: 0.9}
+}
+
+@-moz-keyframes content1-entrance{
+    0%{ opacity: 0}
+    100%{transform: scale3d(1.03,1.03,1.03); opacity: 0.9}
+}
+
+@-ms-keyframes content1-entrance{
+    0%{ opacity: 0}
+    100%{transform: scale3d(1.03,1.03,1.03); opacity: 0.9}
+} */
 
 .mini{
     color: #FFD300;
@@ -240,21 +282,16 @@ body{
 
 .content2{
     letter-spacing: 5px;
-    color: rgba(255,255,255,0.5);
+    color: #808080;
     font-style: italic;
     font-size: 12px;
     line-height: 19px;
+    animation: content-entrance 1.5s 0.5s ease-in forwards;
+    -webkit-animation: content-entrance 1.5s 0.5s ease-in forwards;
+    -moz-animation: content-entrance 1.5s 0.5s ease-in forwards;
+    -ms-animation: content-entrance 1.5s 0.5s ease-in forwards;
+    opacity: 0;
 
-}
-
-.mini1{
-    color: #FFD300;
-    opacity: 0.8;
-}
-
-.mini2{
-    color: #FFD300;
-    opacity: 0.8;
 }
 
 
@@ -283,10 +320,16 @@ body{
 
 .starting{
     animation: menu-slide 0.5s  ease-in forwards;
+    -webkit-animation: menu-slide 0.5s  ease-in forwards;
+    -moz-animation: menu-slide 0.5s  ease-in forwards;
+    -ms-animation: menu-slide 0.5s  ease-in forwards;
 }
 
 .link-fade{
     animation: menu-fadeIn 1s 0.35s  ease-in backwards;
+    -webkit-animation: menu-fadeIn 1s 0.35s  ease-in backwards;
+    -moz-animation: menu-fadeIn 1s 0.35s  ease-in backwards;;
+    -ms-animation: menu-fadeIn 1s 0.35s  ease-in backwards;
 }
 
 .slide-menu ul{
@@ -336,6 +379,31 @@ body{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    animation: slide-nav2-entrance 1s 1s  ease-in forwards;
+    -webkit-animation: slide-nav2-entrance 1s 1s  ease-in forwards;
+    -moz-animation: slide-nav2-entrance 1s 1s  ease-in forwards;
+    -ms-animation: slide-nav2-entrance 1s 1s  ease-in forwards;
+}
+
+@keyframes slide-nav2-entrance {
+    0%{ transform: translateX(15px); opacity:0}
+    100% {transform: translateX(0px); opacity:1}
+}
+
+@-webkit-keyframes slide-nav2-entrance {
+    0%{ transform: translateX(15px); opacity:0}
+    100% {transform: translateX(0px); opacity:1}
+}
+
+@-moz-keyframes slide-nav2-entrance {
+    0%{ transform: translateX(15px); opacity:0}
+    100% {transform: translateX(0px); opacity:1}
+}
+
+@-ms-keyframes slide-nav2-entrance {
+    0%{ transform: translateX(15px); opacity:0}
+    100% {transform: translateX(0px); opacity:1}
 }
 
 /* -------------------------- */
@@ -346,6 +414,12 @@ body{
     margin-left: 80px;
     height: 60px;
     transform: rotate(115deg);
+    -webkit-animation: roll 5s ease-in infinite alternate-reverse,
+    fadeIn 2s ease-in-out;
+    -moz-animation: roll 5s ease-in infinite alternate-reverse,
+    fadeIn 2s ease-in-out;
+    -ms-animation: roll 5s ease-in infinite alternate-reverse,
+    fadeIn 2s ease-in-out;
     animation: roll 5s ease-in infinite alternate-reverse,
                fadeIn 2s ease-in-out;
 }
@@ -360,6 +434,9 @@ body{
     background: #FFD300;
     opacity: 0.7;
     animation: expand 3s 5s  ease-in infinite alternate-reverse;
+    -webkit-animation: expand 3s 5s  ease-in infinite alternate-reverse;
+    -moz-animation: expand 3s 5s  ease-in infinite alternate-reverse;
+    -ms-animation: expand 3s 5s  ease-in infinite alternate-reverse;
 }
 
 .triangle {
@@ -391,6 +468,24 @@ body{
     70%{ top: 155px; opacity:0}
     100% {top: 165px; opacity: 1}
 }
+@-webkit-keyframes menu-slide {
+    0%{opacity:0}
+    70%{ top: 155px; opacity:0}
+    100% {top: 165px; opacity: 1}
+}
+
+@-moz-keyframes menu-slide {
+    0%{opacity:0}
+    70%{ top: 155px; opacity:0}
+    100% {top: 165px; opacity: 1}
+}
+
+@-ms-keyframes menu-slide {
+    0%{opacity:0}
+    70%{ top: 155px; opacity:0}
+    100% {top: 165px; opacity: 1}
+}
+/* -------------------------- */
 
 @keyframes roll {
     0%{transform: rotate(360deg)}
@@ -399,27 +494,120 @@ body{
     
 }
 
+@-webkit-keyframes roll {
+    0%{transform: rotate(360deg)}
+    50%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+    
+}
+
+@-moz-keyframes roll {
+    0%{transform: rotate(360deg)}
+    50%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+    
+}
+
+@-ms-keyframes roll {
+    0%{transform: rotate(360deg)}
+    50%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+    
+}
+/* -------------------------- */
+
 @keyframes menu-fadeIn{
     0%{opacity: 0}
     100%{opacity: 1}
 }
+
+@-webkit-keyframes menu-fadeIn{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+@-moz-keyframes menu-fadeIn{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+@-ms-keyframes menu-fadeIn{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+/* -------------------------- */
+
 
 @keyframes fadeIn{
     0%{opacity: 0}
     100%{opacity: 1}
 }
 
+@-webkit-keyframes fadeIn{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+@-moz-keyframes fadeIn{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+@-ms-keyframes fadeIn{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+/* -------------------------- */
+
 @keyframes expand{
     0%{transform: rotate(360deg) translateY(-8px); opacity: 0.7}
    100%{transform: rotate(0deg) translateY(-6px); opacity: 0.7}
 }
 
+@-webkit-keyframes expand{
+    0%{transform: rotate(360deg) translateY(-8px); opacity: 0.7}
+   100%{transform: rotate(0deg) translateY(-6px); opacity: 0.7}
+}
+
+@-moz-keyframes expand{
+    0%{transform: rotate(360deg) translateY(-8px); opacity: 0.7}
+   100%{transform: rotate(0deg) translateY(-6px); opacity: 0.7}
+}
+
+@-ms-keyframes expand{
+    0%{transform: rotate(360deg) translateY(-8px); opacity: 0.7}
+   100%{transform: rotate(0deg) translateY(-6px); opacity: 0.7}
+}
+
+/* -------------------------- */
 
 @keyframes bounce{
     0%{transform: translateY(8px); opacity: 0}
     50%{transform: translateY(0px); opacity: 1}
     100%{transform: translateY(8px); opacity: 0}
 }
+
+@-webkit-keyframes bounce{
+    0%{transform: translateY(8px); opacity: 0}
+    50%{transform: translateY(0px); opacity: 1}
+    100%{transform: translateY(8px); opacity: 0}
+}
+
+@-moz-keyframes bounce{
+    0%{transform: translateY(8px); opacity: 0}
+    50%{transform: translateY(0px); opacity: 1}
+    100%{transform: translateY(8px); opacity: 0}
+}
+
+@-ms-keyframes bounce{
+    0%{transform: translateY(8px); opacity: 0}
+    50%{transform: translateY(0px); opacity: 1}
+    100%{transform: translateY(8px); opacity: 0}
+}
+
+/* -------------------------- */
 
 
 @keyframes sun {
@@ -428,6 +616,25 @@ body{
     100%{transform: rotate(0deg)}
 }
 
+@-webkit-keyframes sun {
+    0%{transform: rotate(360deg)}
+    50%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+}
+
+@-moz-keyframes sun {
+    0%{transform: rotate(360deg)}
+    50%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+}
+
+@-ms-keyframes sun {
+    0%{transform: rotate(360deg)}
+    50%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
+}
+
+/* -------------------------- */
 
 .burger-nav{
     /* background: red; */
@@ -542,8 +749,8 @@ div#three:hover {
     transform: scale3d(1.2,1.2,1.2);
 }
 
-.ion-social-facebook{
-    font-size: 20px;
+.ion-social-google{
+    font-size: 25px;
     cursor: pointer;
     transition: 0.5s;
 }
