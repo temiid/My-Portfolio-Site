@@ -5,7 +5,7 @@
     height: 100%;
     position: absolute;
     /* top:100%; */
-    max-width: 1300px;
+    /* max-width: 1300px; */
     background: black;
     margin: 0 auto;
     display: flex;
@@ -215,7 +215,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    flex-basis: 760px;
+    flex:1;
     right: 100px;
     height: 40px;
     margin-left: 10px;
@@ -225,7 +225,7 @@
 
 @keyframes movingLine{
     0%{flex-basis: 0px; opacity: 0}
-   100%{flex-basis: 760px; opacity:0.8}
+   100%{flex:1; opacity:0.8}
 }
 
 
@@ -307,7 +307,7 @@
     /* margin: 5px; */
     margin-bottom: 30px;
     margin-right: 10px;
-    flex-basis: 500px;
+    flex:1;
     height: 450px;
 }
 
@@ -356,7 +356,7 @@
     flex-direction: column;
     opacity: 0;
     animation: showcase-second-entrance 1s 1s  ease-in forwards;
-    flex-basis: 500px;
+    flex:1;
     height: 550px;
 }
 

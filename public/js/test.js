@@ -64,6 +64,8 @@ $("#now6").hide();
 
 $("#show-case1").hide();
 
+$("#view").hide();
+
 // $("#show-case2").hide();
 
 $(window).on('mousewheel DOMMouseScroll', function(event){
@@ -232,6 +234,87 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#next6').on('click', function(){
         $('#now2,#now3,#now4,#now5,#now6').fadeOut( 600);
+    });
+
+})
+
+
+//VIEW MORE
+
+$(document).ready(function(){
+    $('#view-more1').on('click', function(){
+        $("#view").fadeIn( 600);
+    });
+
+})
+
+
+$(document).ready(function(){
+    $('#view-more2').on('click', function(){
+        $("#view").fadeIn( 600);
+        $(".more-views").css( "background", "#5B717C");
+        $(".visit-link").text("Evicon Mart");
+        $(".visit-link").css("color", "#FDA35B");
+        $('.screen1').css( "background-image", "url('images/evicon1.png')");
+        $('.screen2').css( "background-image", "url('images/evicon2.png')");
+        $('.screen3').css( "background-image", "url('images/evicon3.png')");
+        $('.screen4').css( "background-image", "url('images/evicon4.png')");
+        $('.screen5').css( "background-image", "url('images/evicon5.png')")
+    });
+
+})
+
+
+$(document).ready(function(){
+    $('#view-more3').on('click', function(){
+        $("#view").fadeIn( 600);
+        $(".more-views").css( "background", "#B588AE");
+        $(".visit-link").text("Tailorgang");
+        $(".visit-link").css("color", "#EC216E");
+        $('.screen1').css( "background-image", "url('images/Tailorgang3.png')");
+        $('.screen2').css( "background-image", "url('images/Tailorgang21.png')");
+        $('.screen3').css( "background-image", "url('images/Tailorgang2.png')");
+        $('.screen4').css( "background-image", "url('images/Tailorgang5.png')");
+        $('.screen5').css( "background-image", "url('images/Tailorgang4.png')")
+    });
+
+})
+
+
+$(document).ready(function(){
+    $('#view-more4').on('click', function(){
+        $("#view").fadeIn( 600);
+        $(".more-views").css( "background", "#64707A");
+        $(".visit-link").text("Evicon");
+        $(".visit-link").css("color", "#CDA662");
+        $('.screen1').css( "background-image", "url('images/jerr1.png')");
+        $('.screen2').css( "background-image", "url('images/jerr2.png')");
+        $('.screen3').css( "background-image", "url('images/jerr3.png')");
+        $('.screen4').css( "background-image", "url('images/jerr4.png')");
+        $('.screen5').css( "background-image", "url('images/jerr5.png')")
+    });
+
+})
+
+
+$(document).ready(function(){
+    $('#view-more5').on('click', function(){
+        $("#view").fadeIn( 600);
+        $(".visit-link").text("Girar Solution Hub");
+        $(".visit-link").css("color", "#F45B21");
+        $('.screen1').css( "background-image", "url('images/refil1.png')");
+        $('.screen2').css( "background-image", "url('images/refil2.png')");
+        $('.screen3').css( "background-image", "url('images/refil3.png')");
+        $('.screen4').css( "background-image", "url('images/refil4.png')");
+        $('.screen5').css( "background-image", "url('images/refil5.png')")
+    });
+
+})
+
+
+$(document).ready(function(){
+    $('.Home-back2').on('click', function(){
+        $('#view').fadeOut( 600);
     });
 
 })
